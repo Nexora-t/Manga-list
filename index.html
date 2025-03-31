@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحميل التطبيق</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        .download-section {
+            background-color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .download-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            display: inline-block;
+            font-size: 1.2em;
+        }
+
+        .download-btn:hover {
+            background-color: #45a049;
+        }
+
+        .social-media {
+            background-color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .social-media h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 15px;
+            display: inline-block;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>تحميل تطبيقنا</h1>
+            <p>تطبيقنا الجديد الآن في متناول يدك! قم بتحميله الآن.</p>
+        </div>
+    </header>
+
+    <section class="download-section">
+        <div class="container">
+            <a href="https://play.google.com/store" class="download-btn">تحميل من Google Play</a>
+            <a href="https://apps.apple.com" class="download-btn">تحميل من App Store</a>
+        </div>
+    </section>
+
+    <section class="social-media">
+        <div class="container">
+            <h2>تابعنا على</h2>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="https://twitter.com" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="https://instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="https://linkedin.com" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script>
+        // إضافة بعض التفاعلات البسيطة عند الضغط على الأزرار
+        document.addEventListener('DOMContentLoaded', function() {
+            const downloadButtons = document.querySelectorAll('.download-btn');
+            
+            downloadButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    alert('شكراً لك على تحميل التطبيق!');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
