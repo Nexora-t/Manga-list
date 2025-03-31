@@ -12,23 +12,19 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #f4f4f9;
             color: #333;
             line-height: 1.6;
         }
 
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            max-width: 1200px;
-        }
-
+        /* Header */
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 50px 0;
             text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         header h1 {
@@ -40,31 +36,35 @@
             font-size: 1.2em;
         }
 
+        /* Buttons Section */
         .download-section {
-            background-color: #fff;
-            padding: 40px 0;
             text-align: center;
+            padding: 60px 20px;
+            background-color: #fff;
         }
 
         .download-btn {
             background-color: #4CAF50;
             color: white;
-            padding: 15px 30px;
+            padding: 20px 40px;
+            border-radius: 30px;
             text-decoration: none;
-            border-radius: 5px;
-            margin: 10px;
-            display: inline-block;
             font-size: 1.2em;
+            margin: 15px;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.3s;
         }
 
         .download-btn:hover {
             background-color: #45a049;
+            transform: scale(1.05);
         }
 
+        /* Social Media Section */
         .social-media {
-            background-color: #fff;
-            padding: 40px 0;
             text-align: center;
+            padding: 40px 20px;
+            background-color: #f0f0f0;
         }
 
         .social-media h2 {
@@ -73,20 +73,21 @@
         }
 
         .social-icons a {
-            margin: 0 15px;
+            margin: 0 20px;
             display: inline-block;
-        }
-
-        .social-icons img {
-            width: 40px;
-            height: 40px;
             transition: transform 0.3s;
         }
 
-        .social-icons img:hover {
+        .social-icons img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .social-icons a:hover {
             transform: scale(1.1);
         }
 
+        /* Footer */
         footer {
             background-color: #333;
             color: white;
@@ -96,49 +97,34 @@
     </style>
 </head>
 <body>
+
     <header>
-        <div class="container">
-            <h1>تحميل تطبيقنا</h1>
-            <p>تطبيقنا الجديد الآن في متناول يدك! قم بتحميله الآن.</p>
-        </div>
+        <h1>تحميل تطبيقنا الرائع</h1>
+        <p>قم بتحميل تطبيقنا الآن للحصول على أفضل تجربة!</p>
     </header>
 
     <section class="download-section">
-        <div class="container">
-            <a href="https://play.google.com/store" class="download-btn">تحميل من Google Play</a>
-            <a href="https://apps.apple.com" class="download-btn">تحميل من App Store</a>
-        </div>
+        <a href="https://play.google.com/store" class="download-btn">تحميل من Google Play</a>
+        <a href="https://apps.apple.com" class="download-btn">تحميل من App Store</a>
     </section>
 
     <section class="social-media">
-        <div class="container">
-            <h2>تابعنا على</h2>
-            <div class="social-icons">
-                <a href="https://facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
-                <a href="https://twitter.com" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
-                <a href="https://instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
-                <a href="https://linkedin.com" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
-            </div>
+        <h2>تابعنا على</h2>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="https://linkedin.com" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 جميع الحقوق محفوظة.</p>
-        </div>
+        <p>&copy; 2025 جميع الحقوق محفوظة.</p>
     </footer>
 
     <script>
-        // إضافة بعض التفاعلات البسيطة عند الضغط على الأزرار
-        document.addEventListener('DOMContentLoaded', function() {
-            const downloadButtons = document.querySelectorAll('.download-btn');
-            
-            downloadButtons.forEach(button => {
-                button.addEventListener('click', function() {
-                    alert('شكراً لك على تحميل التطبيق!');
-                });
-            });
-        });
+        // يمكن إضافة تأثيرات JavaScript هنا إذا لزم الأمر
     </script>
+
 </body>
 </html>
