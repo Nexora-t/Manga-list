@@ -5,126 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تحميل التطبيق</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        /* CSS */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f9;
+            background-color: #f4f4f4;
             color: #333;
-            line-height: 1.6;
+            text-align: center;
+            margin: 0;
+            padding: 0;
         }
 
-        /* Header */
         header {
             background-color: #4CAF50;
             color: white;
-            text-align: center;
-            padding: 60px 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
         }
 
-        header h1 {
-            font-size: 3em;
+        header .logo img {
+            width: 100px;
             margin-bottom: 10px;
         }
 
-        header p {
-            font-size: 1.2em;
+        h1 {
+            font-size: 36px;
+            margin: 10px 0;
         }
 
-        /* Buttons Section */
+        p {
+            font-size: 18px;
+        }
+
         .download-section {
-            text-align: center;
-            padding: 60px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 0;
             background-color: #fff;
         }
 
-        .download-btn {
+        .app-info {
+            text-align: left;
+            max-width: 400px;
+        }
+
+        .app-image {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        .download-btn button {
+            padding: 15px 30px;
+            font-size: 20px;
             background-color: #4CAF50;
             color: white;
-            padding: 20px 40px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-size: 1.2em;
-            margin: 15px;
-            display: inline-block;
-            transition: background-color 0.3s, transform 0.3s;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
         }
 
-        .download-btn:hover {
+        .download-btn button:hover {
             background-color: #45a049;
-            transform: scale(1.05);
         }
 
-        /* Social Media Section */
-        .social-media {
-            text-align: center;
-            padding: 40px 20px;
-            background-color: #f0f0f0;
-        }
-
-        .social-media h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-
-        .social-icons a {
-            margin: 0 20px;
-            display: inline-block;
-            transition: transform 0.3s;
-        }
-
-        .social-icons img {
-            width: 50px;
-            height: 50px;
-        }
-
-        .social-icons a:hover {
-            transform: scale(1.1);
-        }
-
-        /* Footer */
         footer {
             background-color: #333;
             color: white;
-            padding: 20px 0;
-            text-align: center;
+            padding: 10px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>تحميل تطبيقنا الرائع</h1>
-        <p>موقع مانهوا كل ماهو جديد تجدونها في تطبيقنا</p>
+        <div class="logo">
+            <img src="logo.png" alt="شعار الجمهورية">
+        </div>
+        <h1>مرحبا بك في موقع جمهورية التطبيق</h1>
+        <p>قم بتحميل تطبيقنا للاستمتاع بأحدث المزايا!</p>
     </header>
 
     <section class="download-section">
-        <a href="https://github.com/Nexora-t/Manga-list/blob/main/base.zip" download="base.zip">
-    <button>تحميل الملف</button>
-        </a>
-    </section>
+        <div class="app-info">
+            <img src="app-image.jpg" alt="صورة التطبيق" class="app-image">
+            <h2>التطبيق الرائع</h2>
+            <p>قم بتحميل تطبيقنا للاستمتاع بتجربة استخدام مميزة!</p>
+        </div>
 
-    <section class="social-media">
-        <h2>تابعنا على</h2>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/profile.php?id=61573915156286" target="_blank"><img src="https://img.icons8.com/?size=100&id=eroEfFA9ALuI&format=png&color=000000" alt="Facebook"></a>
-            <a href="https://t.me/tadawoul34" target="_blank"><img src="https://img.icons8.com/?size=100&id=5mIvDYZUWDCF&format=png&color=000000" alt="Telegram"></a>
-            <a href="https://www.instagram.com/invites/contact/?i=1ugt8i2ng29v5&utm_content=ullbgf6‎" target="_blank"><img src="https://img.icons8.com/?size=100&id=BrU2BBoRXiWq&format=png&color=000000" alt="Instagram"></a>
-            
+        <div class="download-btn">
+            <button id="downloadBtn">تحميل التطبيق بصيغة APK</button>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 جميع الحقوق محفوظة.</p>
+        <p>&copy; 2025 جمهورية التطبيق. جميع الحقوق محفوظة.</p>
     </footer>
 
     <script>
-        // يمكن إضافة تأثيرات JavaScript هنا إذا لزم الأمر
+        // JavaScript
+        document.getElementById('downloadBtn').addEventListener('click', function() {
+            // مسار ملف APK
+            const apkUrl = 'path/to/manga-list.apk'; // استبدل هذا بالمسار الفعلي لملف APK
+
+            // إنشاء رابط لتحميل الملف
+            const link = document.createElement('a');
+            link.href = apkUrl;
+            link.download = 'app-name.apk'; // اسم الملف عند التحميل
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
     </script>
 
 </body>
